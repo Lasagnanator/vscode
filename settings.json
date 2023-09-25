@@ -1,0 +1,107 @@
+{
+    "Lua.diagnostics.globals": [
+        "vim"
+    ],
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.inlineSuggest.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.overviewRulerBorder": false,
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "editor.wordBasedSuggestions": false,
+    "files.simpleDialog.enable": true,
+    "vim.foldfix": true,
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "after": [],
+            "before": [ "u" ],
+            "commands": [ { "command": "undo" } ]
+        },
+        {
+            "after": [],
+            "before": [ "<C-r>" ],
+            "commands": [ { "command": "redo" } ]
+        },
+        {
+            "before": [ "leader", "w" ],
+            "commands": [ ":w" ]
+        },
+        {
+            "before": [ "leader", "W" ],
+            "commands": [ "saveAll" ]
+        },
+        {
+            "before": [ "leader", "q" ],
+            "commands": [ ":q!" ]
+        },
+        {
+            "before": [ "leader", "p" ],
+            "commands": [ "\"+p" ]
+        },
+        {
+            "before": [ "leader", "P" ],
+            "commands": [ "\"+P" ]
+        },
+        {
+            "before": [ "leader", "y" ],
+            "commands": [ "\"+y" ]
+        },
+        {
+            "before": [ "leader", "Y" ],
+            "commands": [ "\"+Y" ]
+        },
+        {
+            "before": [ "leader", "l", "r" ],
+            "commands": [ "editor.action.rename" ]
+        },
+        {
+            "before": [ "leader", "l", "f" ],
+            "commands": [ "editor.action.formatDocument" ]
+        },
+        {
+            "before": [ "leader", "g", "b" ],
+            "after": [ "gitlens.toggleFileBlame" ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "leader", "w" ],
+            "commands": [ ":w" ]
+        },
+        {
+            "before": [ "leader", "W" ],
+            "commands": [ "saveAll" ]
+        },
+        {
+            "before": [ "leader", "q" ],
+            "commands": [ ":q!" ]
+        },
+    ],
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-w>": false,
+        "<Space>B": false,
+    },
+    "vim.replaceWithRegister": true,
+    "vim.targets.smartQuotes.aIncludesSurroundingSpaces": false,
+    "window.customMenuBarAltFocus": false,
+    "window.menuBarVisibility": "compact",
+    "window.title": "${dirty}${rootName}",
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.type": "menu",
+    "workbench.tips.enabled": false,
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font Propo'",
+    "editor.quickSuggestionsDelay": 1,
+    "vim.highlightedyank.enable": true,
+    "search.searchOnType": false,
+    "search.smartCase": true,
+}
