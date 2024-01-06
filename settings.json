@@ -2,106 +2,213 @@
     "Lua.diagnostics.globals": [
         "vim"
     ],
+    "[git-commit]": {
+        "editor.rulers": [
+            72
+        ],
+        "workbench.editor.restoreViewState": false
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "ansible.validation.lint.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "FiraCode Nerd Font Propo, monospace",
+    "editor.fontLigatures": true,
     "editor.hideCursorInOverviewRuler": true,
-    "editor.inlineSuggest.enabled": false,
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.overviewRulerBorder": false,
-    "editor.quickSuggestions": {
-        "other": "off"
-    },
-    "editor.wordBasedSuggestions": false,
+    "editor.quickSuggestionsDelay": 1,
+    "editor.smoothScrolling": true,
+    "editor.wordBasedSuggestions": "off",
     "files.simpleDialog.enable": true,
+    "git.verboseCommit": true,
+    "gitlens.keymap": "none",
+    "gitlens.telemetry.enabled": false,
+    "search.searchOnType": false,
+    "search.smartCase": true,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.smoothScrolling": true,
+    "todo-tree.general.tagGroups": {},
+    "todo-tree.highlights.enabled": false,
+    "todohighlight.defaultStyle": {},
+    "typescript.format.semicolons": "insert",
     "vim.foldfix": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-j>": false,
+        "<C-p>": false,
+        "<C-s>": false,
+        "<C-w>": false,
+        "<C-z>": false,
+        "<Space>B": false
+    },
+    "vim.highlightedyank.enable": true,
     "vim.leader": "<Space>",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "after": [],
-            "before": [ "u" ],
-            "commands": [ { "command": "undo" } ]
+            "before": [
+                "u"
+            ],
+            "commands": [
+                {
+                    "command": "undo"
+                }
+            ]
         },
         {
             "after": [],
-            "before": [ "<C-r>" ],
-            "commands": [ { "command": "redo" } ]
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                {
+                    "command": "redo"
+                }
+            ]
         },
         {
-            "before": [ "leader", "w" ],
-            "commands": [ ":w" ]
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                ":w"
+            ]
         },
         {
-            "before": [ "leader", "W" ],
-            "commands": [ "saveAll" ]
+            "before": [
+                "leader",
+                "W"
+            ],
+            "commands": [
+                "saveAll"
+            ]
         },
         {
-            "before": [ "leader", "q" ],
-            "commands": [ ":q!" ]
+            "before": [
+                "leader",
+                "q"
+            ],
+            "commands": [
+                ":q!"
+            ]
         },
         {
-            "before": [ "leader", "p" ],
-            "commands": [ "\"+p" ]
+            "before": [
+                "leader",
+                "p"
+            ],
+            "commands": [
+                "\"+p"
+            ]
         },
         {
-            "before": [ "leader", "P" ],
-            "commands": [ "\"+P" ]
+            "before": [
+                "leader",
+                "P"
+            ],
+            "commands": [
+                "\"+P"
+            ]
         },
         {
-            "before": [ "leader", "y" ],
-            "commands": [ "\"+y" ]
+            "before": [
+                "leader",
+                "y"
+            ],
+            "commands": [
+                "\"+y"
+            ]
         },
         {
-            "before": [ "leader", "Y" ],
-            "commands": [ "\"+Y" ]
+            "before": [
+                "leader",
+                "Y"
+            ],
+            "commands": [
+                "\"+Y"
+            ]
         },
         {
-            "before": [ "leader", "l", "r" ],
-            "commands": [ "editor.action.rename" ]
+            "before": [
+                "leader",
+                "l",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
         },
         {
-            "before": [ "leader", "l", "f" ],
-            "commands": [ "editor.action.formatDocument" ]
+            "before": [
+                "leader",
+                "l",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
         },
         {
-            "before": [ "leader", "g", "b" ],
-            "after": [ "gitlens.toggleFileBlame" ]
-        },
+            "after": [
+                "gitlens.toggleFileBlame"
+            ],
+            "before": [
+                "leader",
+                "g",
+                "b"
+            ]
+        }
     ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [ "leader", "w" ],
-            "commands": [ ":w" ]
-        },
-        {
-            "before": [ "leader", "W" ],
-            "commands": [ "saveAll" ]
-        },
-        {
-            "before": [ "leader", "q" ],
-            "commands": [ ":q!" ]
-        },
-    ],
-    "vim.handleKeys": {
-        "<C-d>": true,
-        "<C-s>": false,
-        "<C-z>": false,
-        "<C-w>": false,
-        "<Space>B": false,
-    },
     "vim.replaceWithRegister": true,
     "vim.targets.smartQuotes.aIncludesSurroundingSpaces": false,
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                ":w"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "W"
+            ],
+            "commands": [
+                "saveAll"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "q"
+            ],
+            "commands": [
+                ":q!"
+            ]
+        }
+    ],
     "window.customMenuBarAltFocus": false,
     "window.menuBarVisibility": "compact",
     "window.title": "${dirty}${rootName}",
     "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Tokyo Night Storm",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Moonlight Italic",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.layoutControl.type": "menu",
-    "workbench.tips.enabled": false,
-    "editor.fontFamily": "'CaskaydiaCove Nerd Font Propo'",
-    "editor.quickSuggestionsDelay": 1,
-    "vim.highlightedyank.enable": true,
-    "search.searchOnType": false,
-    "search.smartCase": true,
+    "workbench.list.smoothScrolling": true,
+    "workbench.tips.enabled": false
 }
