@@ -21,7 +21,7 @@
     "editor.bracketPairColorization.enabled": false,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "FiraCode Nerd Font Propo, monospace",
+    "editor.fontFamily": "FiraCode Nerd Font Propo",
     "editor.fontLigatures": true,
     "editor.hideCursorInOverviewRuler": true,
     "editor.lineNumbers": "relative",
@@ -32,10 +32,59 @@
     "editor.wordBasedSuggestions": "off",
     "files.simpleDialog.enable": true,
     "git.verboseCommit": true,
-    "gitlens.keymap": "none",
     "gitlens.telemetry.enabled": false,
+    "remote.SSH.path": "C:\\Users\\andrea.divo\\ssh.bat",
+    "remote.SSH.remotePlatform": {
+        "divops": "linux",
+        "crosta": "linux",
+        "thrp-dev": "linux",
+        "thrp": "linux"
+    },
     "search.searchOnType": false,
     "search.smartCase": true,
+    "settingsSync.ignoredExtensions": [
+        "redhat.ansible",
+        "samuelcolvin.jinjahtml",
+        "ms-azuretools.vscode-docker",
+        "tamasfe.even-better-toml",
+        "gitlab.gitlab-workflow",
+        "golang.go",
+        "ms-vscode.vscode-typescript-next",
+        "ryannaddy.laravel-artisan",
+        "shufo.vscode-blade-formatter",
+        "onecentlin.laravel-blade",
+        "ihunte.laravel-blade-wrapper",
+        "glitchbl.laravel-create-view",
+        "onecentlin.laravel-extension-pack",
+        "amiralizadeh9480.laravel-extra-intellisense",
+        "codingyu.laravel-goto-view",
+        "naoray.laravel-goto-components",
+        "pgl.laravel-jump-controller",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ofhumanbondage.react-proptypes-intellisense",
+        "rust-lang.rust-analyzer",
+        "vue.vscode-typescript-vue-plugin",
+        "vue.volar",
+        "dantleech.vscode-phpactor",
+        "onecentlin.laravel5-snippets",
+        "william-voyek.vscode-nginx",
+        "dsznajder.es7-react-js-snippets",
+        "firefox-devtools.vscode-firefox-debug",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "formulahendry.vscode-mysql",
+        "ckolkman.vscode-postgres",
+        "mads-hartmann.bash-ide-vscode",
+        "rogalmic.bash-debug",
+        "vadimcn.vscode-lldb",
+        "shaunlebron.vscode-parinfer",
+        "alexcvzz.vscode-sqlite",
+        "xdebug.php-debug",
+        "serayuzgur.crates",
+        "swellaby.rust-pack",
+        "rangav.vscode-thunder-client",
+        "dendron.dendron"
+    ],
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.smoothScrolling": true,
     "todo-tree.general.tagGroups": {},
@@ -142,32 +191,38 @@
         },
         {
             "before": [
-                "leader",
-                "l",
-                "r"
+                "[",
+                "<tab>"
             ],
             "commands": [
-                "editor.action.rename"
+                "workbench.action.previousEditor"
             ]
         },
         {
             "before": [
-                "leader",
-                "l",
-                "f"
+                "]",
+                "<tab>"
             ],
             "commands": [
-                "editor.action.formatDocument"
+                "workbench.action.nextEditor"
             ]
         },
         {
-            "after": [
-                "gitlens.toggleFileBlame"
-            ],
             "before": [
-                "leader",
-                "g",
-                "b"
+                "[",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.previous"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.next"
             ]
         }
     ],
@@ -200,15 +255,78 @@
             "commands": [
                 ":q!"
             ]
+        },
+        {
+            "before": [
+                "[",
+                "<tab>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "<tab>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "[",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.previous"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "e"
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ]
         }
     ],
+    "vsicons.dontShowNewVersionMessage": true,
     "window.customMenuBarAltFocus": false,
     "window.menuBarVisibility": "compact",
     "window.title": "${dirty}${rootName}",
     "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Moonlight Italic",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.layoutControl.type": "menu",
     "workbench.list.smoothScrolling": true,
-    "workbench.tips.enabled": false
+    "workbench.tips.enabled": false,
+    "[go]": {
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        }
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "material-icon-theme.activeIconPack": "angular",
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path-linux": "/home/divo/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.kubectl-path-linux": "/home/divo/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-linux": "/home/divo/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "gitlens.graph.layout": "editor",
+    "vscode-mysql.enableTelemetry": false,
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "update.showReleaseNotes": false,
+    "settingsSync.keybindingsPerPlatform": false,
+    "editor.cursorSurroundingLines": 4,
+    "markdown.preview.typographer": true,
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+    "markdown-preview-enhanced.previewTheme": "none.css",
 }
